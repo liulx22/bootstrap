@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.1</jspversion>
+	<shortname>ainx</shortname>
+	<uri>http://www.ainx.com.cn</uri>
+    
+    <tag>
+        <name>hello</name>
+        <tagclass>com.ch15.tag.HelloTag</tagclass>
+    </tag>
+    
+    <tag>
+        <name>max</name>
+        <tagclass>com.ch15.tag.MaxTag</tagclass>
+        <attribute>
+            <name>num1</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>num2</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <tag>
+        <name>greet</name>
+        <tagclass>com.ch15.tag.GreetTag</tagclass>
+        <bodycontent>JSP</bodycontent>
+    </tag>
+    
+    <tag>
+        <name>switch</name>
+        <tagclass>com.ch15.tag.SwitchTag</tagclass>
+        <bodycontent>JSP</bodycontent>
+    </tag>
+    <tag>
+        <name>case</name>
+        <tagclass>com.ch15.tag.CaseTag</tagclass>
+        <bodycontent>JSP</bodycontent>
+        <attribute>
+            <name>cond</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <tag>
+        <name>default</name>
+        <tagclass>com.ch15.tag.DefaultTag</tagclass>
+        <bodycontent>JSP</bodycontent>
+    </tag>
+    
+    <tag>
+        <name>welcome</name>
+        <tagclass>com.ch15.WelcomeSimpleTag</tagclass>
+        <bodycontent>tagdependent</bodycontent>
+        <attribute>
+            <name>name</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+</taglib>
